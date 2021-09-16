@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cidade da Coxinha Sorocaba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="icon2.ico">
+
+</head>
+
+<body>
+    <main>
+
+        <form action="#" method="POST">
+            <div class="center">
+                <fieldset class="dados">
+                    <legend class="text">Dados pessoais:</legend>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" maxlength="100" required>
+
+                    <label for="endereco">Endereço: </label>
+                    <textarea name="endereco" id="endereco" cols="40" rows="1" required></textarea>
+                    <legend>Data de Nascimento</legend>
+                    <input type="date" name="data" id="data" required>
+                    <legend>Telefone</legend>
+                    <input type="tel" name="number" id="number" required>
+                </fieldset>
+
+                <fieldset class="opcional">
+                    <div>
+                        <legend>É maior de idade?</legend>
+                        <input type="radio" name="escolha" required>
+                        <label class="yes" for="nao">Sim</label>
+                        <input type="radio" name="escolha" required>
+                        <label class="yes" for="nao">Nao </label>
+                        <legend>Seu interesse na cidade?</legend>
+                        <input type="radio" name="cidade" id="turista">
+                        <label for="turista">Turista</label>
+                        <input type="radio" name="cidade" id="estudante">
+                        <label for="estudante">Estudante </label>
+                        <input type="radio" name="cidade" id="residente">
+                        <label for="residente">Residente </label></div>
+                </fieldset>
+                <fieldset class="opcional">
+                    <legend class="text">Você gostaria de visitar oque?</legend>
+                    <select name="Interesse" id="interesse">
+                        <option value="">Selecione</option>
+                        <option value="coxinha">Padaria da Real</option>
+                        <option value="Zenir">Pastelaria da Zenir</option>
+                        <option value="zoo">Zoológico Municipal</option>
+                        <option value="5kg">Coxinha de 5KG</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="botao">
+                <button type="submit">Enviar</button>
+                <button class="cancel" type="reset">Reiniciar</button></div>
+            <div class="ani">
+                <img src="coxinha.png" alt="Coxinha"></div>
+    </main>
+</body>
+<footer>
+    <p class="final">Desenvolvido por Wesley Bueno | Marcelo Rows | Ronaldo Fonseca</p>
+    <p class="final">Referente ao Checkpoint de Front-End 02 - Certified Tech Developer - Digital House</p>
+</footer>
+
+</html>
